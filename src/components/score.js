@@ -28,7 +28,7 @@ const Score = (props) => {
                <button className="plus-btn notAllowed">
                   <img src={iconPlus} alt="plus"></img>
                </button>
-               <p role="score-value" className="score-value">{props.commentScore}</p>
+               <p className="score-value">{props.commentScore}</p>
                <button className="minus-btn notAllowed">
                   <img src={iconMinus} alt="minus"></img>
                </button>
@@ -38,7 +38,7 @@ const Score = (props) => {
                <button className={plusClass} onClick={() => props.onPlus(props.commentId, currentUser.username)}>
                   <img src={iconPlus} alt="plus"></img>
                </button>
-               <p role="score-value" className={scoreClass}>{props.commentScore}</p>
+               <p className={scoreClass}>{props.commentScore}</p>
                <button className={minusClass} onClick={() => props.onMinus(props.commentId, currentUser.username)}>
                   <img src={iconMinus} alt="minus"></img>
                </button>
