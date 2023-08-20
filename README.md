@@ -16,7 +16,7 @@ Users should be able to:
 
 Screenshot
 
-![](./screenshot.jpg)
+![](./src/images/screencapture.png)
 
 - [Solution URL ](https://your-solution-url.com)
 - [Live Site URL ](https://irthifa.github.io/interactive-comments-section/)

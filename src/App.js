@@ -17,8 +17,6 @@ function App() {
       return localComments;
     }
     else {
-      //const savedComments = commentsData.concat(localComments);
-      //return savedComments;
       return commentsData;
     }
   });
@@ -60,7 +58,6 @@ function App() {
     localStorage.setItem("comments", JSON.stringify(comments));
   }, [comments]);
 
-  console.log(JSON.stringify(commentsData.concat(comments)))
   function handleAddInputChange(e) {
     setComment(e.target.value);
   }
