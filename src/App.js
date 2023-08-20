@@ -17,8 +17,9 @@ function App() {
       return localComments;
     }
     else {
-      const savedComments = commentsData.concat(localComments);
-      return savedComments;
+      //const savedComments = commentsData.concat(localComments);
+      //return savedComments;
+      return commentsData;
     }
   });
 

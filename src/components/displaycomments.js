@@ -29,7 +29,7 @@ const Displaycomments = (props) => {
                      />}
                   />
                   <div className="reply-container">
-                  {e.replies === "" ? <></> :
+                  {e.replies === "" ? null :
                      e.replies.map(r =>
                         <Comment
                            key={r.id}
