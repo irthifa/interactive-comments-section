@@ -13,7 +13,7 @@ function App() {
   //localStorage.clear();
   const [comments, setComments] = useState(() => {
     const localComments = JSON.parse(localStorage.getItem("comments"));
-    if (localComments.length > 0) {
+    if (localComments?.length > 0) {
       return localComments;
     }
     else {
