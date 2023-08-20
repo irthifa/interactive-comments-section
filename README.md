@@ -18,7 +18,7 @@ Screenshot
 
 ![](./src/images/screencapture.png)
 
-- [Solution URL ](https://your-solution-url.com)
+- [Solution URL ](https://www.frontendmentor.io/solutions/crud-interactive-comment-section-using-react-and-localstorage-jyVO7fQc23)
 - [Live Site URL ](https://irthifa.github.io/interactive-comments-section/)
 
 

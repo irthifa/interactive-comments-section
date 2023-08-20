@@ -21,8 +21,8 @@ const Commentitem = (props) => {
             />
       
             <div className="comment-info">
-               <div className="user">
-                  <div className="user-title">
+               <div role="user" className="user">
+                  <div role="user-title" className="user-title">
                      <a href={'#' + props.comment.user.username}><img className="user-img" src={require('../images/avatars/image-' + props.comment.user.username + '.png')} alt={props.comment.user.username}></img></a>
                      <a href={'#' + props.comment.user.username}><h1 className="user-name">{props.comment.user.username}</h1></a>
                      {props.comment.user.username === currentUser.username ?
@@ -39,17 +39,17 @@ const Commentitem = (props) => {
                   {props.comment.user.username === currentUser.username ?
                      <>
                         <button className="delete-btn" onClick={() => props.onDelete(props.comment.id)}>
-                           <img src={iconDelete} alt="delete"></img>
+                           <img src={iconDelete} alt=""></img>
                            <span> Delete</span>
                         </button>
                         <button className="edit-btn" onClick={() => props.onEdit(props.comment)}>
-                           <img src={iconEdit} alt="edit"></img>
+                           <img src={iconEdit} alt=""></img>
                            <span> Edit</span>
                         </button>
                      </>
                      :
                      <button className="reply-btn" onClick={() => props.onReply(props.comment)}>
-                        <img src={iconReply} alt="reply"></img>
+                        <img src={iconReply} alt=""></img>
                         <span> Reply</span>
                      </button>
                   }
@@ -60,12 +60,12 @@ const Commentitem = (props) => {
                      {props.editing === props.comment.id ?
                         props.editFormComponent
                         :
-                        <p className="comment-content"><span>{props.replyingTo} </span>{props.comment.content}</p>
+                        <p role="comment-content" className="comment-content"><span>{props.replyingTo} </span>{props.comment.content}</p>
                      }
                   </>
                   :
                   <>
-                     <p className="comment-content"><span>{props.replyingTo} </span>{props.comment.content}</p>
+                     <p role="comment-content" className="comment-content"><span>{props.replyingTo} </span>{props.comment.content}</p>
                   </>
                }
 
